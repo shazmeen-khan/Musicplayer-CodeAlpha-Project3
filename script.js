@@ -1,44 +1,44 @@
-// Playlist songs — MP3 files are in the songs/ folder
+// Playlist songs — using your downloaded MP3 files
 const defaultSongs = [
     {
         title: "Allah Waariyan",
         artist: "Himansh Kohli",
-        src: "songs/ALLAH WAARIYAN FULL SONG (AUDIO) _ YAARIYAN _ HIMANSH KOHLI_ RAKUL PREET(MP3_320K).mp3",
-        cover: "Images/allah_waariyan.jpg",
+        src: "ALLAH WAARIYAN FULL SONG (AUDIO) _ YAARIYAN _ HIMANSH KOHLI_ RAKUL PREET(MP3_320K).mp3",
+        cover: "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=500&q=80",
         isLocal: false
     },
     {
         title: "Lambiyaan Si Judaiyaan",
         artist: "Arijit Singh",
-        src: "songs/Arijit Singh _ Lambiyaan Si Judaiyaan With Lyrics _ Raabta _ Sushant Rajput_ Kriti Sanon _ T-Series(MP3_320K).mp3",
+        src: "Arijit Singh _ Lambiyaan Si Judaiyaan With Lyrics _ Raabta _ Sushant Rajput_ Kriti Sanon _ T-Series(MP3_320K).mp3",
         cover: "Images/lambiyaan_judaiyaan.png",
         isLocal: false
     },
     {
         title: "Roi Na",
         artist: "Hindi Sad Song",
-        src: "songs/Roi Na Je yaad Meri Aayi Ve _ New Sad Songs Hindi 2020 _ Hindi Sad Song _ Sad Songs _ New Sad Song(MP3_320K).mp3",
+        src: "Roi Na Je yaad Meri Aayi Ve _ New Sad Songs Hindi 2020 _ Hindi Sad Song _ Sad Songs _ New Sad Song(MP3_320K).mp3",
         cover: "Images/roi_na.png",
         isLocal: false
     },
     {
         title: "Shiddat",
         artist: "Manan Bhardwaj",
-        src: "songs/Shiddat Title Track (LYRICS) - Sunny Kaushal_ Radhika Madan_ Mohit Raina_ Diana P _ Manan Bhardwaj(MP3_320K).mp3",
+        src: "Shiddat Title Track (LYRICS) - Sunny Kaushal_ Radhika Madan_ Mohit Raina_ Diana P _ Manan Bhardwaj(MP3_320K).mp3",
         cover: "Images/shiddat.png",
         isLocal: false
     },
     {
         title: "Milne Hai Mujhse Aayi",
         artist: "Aditya Roy Kapur",
-        src: "songs/_Milne Hai Mujhse Aayi Aashiqui 2_ Full Video Song _ Aditya Roy Kapur_ Shraddha Kapoor(MP3_320K).mp3",
+        src: "_Milne Hai Mujhse Aayi Aashiqui 2_ Full Video Song _ Aditya Roy Kapur_ Shraddha Kapoor(MP3_320K).mp3",
         cover: "Images/milne_hai_mujhse.png",
         isLocal: false
     },
     {
         title: "So Dafa Pukara Hai",
         artist: "Sad Song",
-        src: "songs/use so dafa pukara hai dil ne song(MP3_320K).mp3",
+        src: "use so dafa pukara hai dil ne song(MP3_320K).mp3",
         cover: "Images/so_dafa.png",
         isLocal: false
     }
