@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- Player Card -->
+        <div class="player-card">
+            <div class="artwork-container">
+                <img src="" alt="Cover" id="cover" class="cover-image">
+            </div>
+
+            <div class="song-info">
+                <div id="title" class="song-title">Track 1</div>
+                <div id="artist" class="song-artist">Unknown Artist</div>
+            </div>
+
+            <div class="progress-container">
+                <div class="time-display">
+                    <span id="current-time">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+                <input type="range" id="progress-bar" class="progress-bar" value="0" min="0" max="100">
+            </div>
+
+            <div class="controls-container">
+                <button id="shuffle" class="control-btn" title="Shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </button>
+                <button id="prev" class="control-btn" title="Previous">
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button id="play" class="control-btn play-btn" title="Play/Pause">
+                    <i class="fa-solid fa-play" id="play-icon"></i>
+                </button>
+                <button id="next" class="control-btn" title="Next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+                <button id="repeat" class="control-btn" title="Repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </button>
+            </div>
+
+            <div class="volume-container">
+                <button id="mute" class="volume-btn" title="Mute">
+                    <i class="fa-solid fa-volume-high" id="volume-icon"></i>
+                </button>
+                <input type="range" id="volume-slider" class="volume-slider" value="100" min="0" max="100">
+            </div>
+        </div>
+
+        <!-- Playlist Card -->
+        <div class="playlist-card">
+            <div class="playlist-header">
+                <h3><i class="fa-solid fa-music"></i> My Playlist</h3>
+                <label for="file-input" class="upload-btn">
+                    <i class="fa-solid fa-plus"></i> Add Song
+                </label>
+                <input type="file" id="file-input" accept="audio/*" style="position:absolute; left:-9999px; opacity:0; width:0; height:0;">
+            </div>
+            <ul id="playlist" class="playlist-list"></ul>
+        </div>
+
+    </div>
+
+    <!-- Upload Info Modal — shown after user picks an audio file -->
+    <div id="upload-modal" class="modal-overlay" style="display:none;">
+        <div class="modal-box">
+            <h3 class="modal-title"><i class="fa-solid fa-music"></i> Song Details</h3>
+
+            <label class="modal-label">Song Name</label>
+            <input type="text" id="modal-title" class="modal-input" placeholder="e.g. Tum Hi Ho">
+
+            <label class="modal-label">Artist / Singer Name</label>
+            <input type="text" id="modal-artist" class="modal-input" placeholder="e.g. Arijit Singh">
+
+            <label class="modal-label">Cover Image (optional)</label>
+            <div class="cover-picker-row">
+                <label for="modal-cover-file" class="cover-file-btn">
+                    <i class="fa-solid fa-image"></i> Choose Image
+                </label>
+                <input type="file" id="modal-cover-file" accept="image/*" style="display:none;">
+                <span id="cover-file-name" class="cover-file-name">No file chosen</span>
+            </div>
+            <!-- Preview of selected cover -->
+            <img id="cover-preview" class="cover-preview" src="" alt="Preview" style="display:none;">
+
+            <div class="modal-buttons">
+                <button id="modal-cancel" class="modal-btn cancel-btn">Cancel</button>
+                <button id="modal-add" class="modal-btn add-btn">Add to Playlist</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
