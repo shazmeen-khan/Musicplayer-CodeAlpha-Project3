@@ -31,7 +31,7 @@ const defaultSongs = [
     {
         title: "Milne Hai Mujhse Aayi",
         artist: "Aditya Roy Kapur",
-        src: "_Milne Hai Mujhse Aayi Aashiqui 2_ Full Video Song _ Aditya Roy Kapur_ Shraddha Kapoor(MP3_320K).mp3",
+        src: "Milne Hai Mujhse Aayi Aashiqui 2_ Full Video Song _ Aditya Roy Kapur_ Shraddha Kapoor(MP3_320K).mp3",
         cover: "Images/milne_hai_mujhse.png",
         isLocal: false
     },
